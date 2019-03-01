@@ -1,0 +1,33 @@
+<div style="text-align:center">
+  <h1>
+    Calculator!
+  </h1>
+  <div style="margin: 10px;">
+    <input type="text" [(ngModel)]="number1">
+  </div>
+  <div style="margin: 10px;">
+    <input type="text" [(ngModel)]="number2">
+  </div>
+  <div style="margin: 10px;">
+    Pilih Operasi Hitung
+  </div>
+  <div style="margin: 10px;">
+    <button style="margin: 10px;" (click)="Operation('+')">+</button>
+    <button style="margin: 10px;" (click)="Operation('-')">-</button>
+    <button style="margin: 10px;" (click)="Operation('/')">/</button>
+    <button style="margin: 10px;" (click)="Operation('*')">x</button>
+  </div>
+  <div style="margin: 10px;">
+    <h3 *ngIf="result">{{result}}</h3>
+  </div>
+
+  <h1>
+    Passing Data!
+  </h1>
+  <div style="margin: 10px;">
+    <input type="text" [(ngModel)]="PassingData">
+  </div>
+  <div style="margin: 10px;">
+    <button style="margin: 10px;" (click)="passingDataFunc(PassingData)">Goto Next Page With Data</button>
+  </div>
+</div>
